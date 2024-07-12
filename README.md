@@ -2,83 +2,81 @@
 
 ## Overview
 
-The Automated Incident Response System is designed to quickly identify and mitigate security incidents using Python and Flask. This project integrates with various cybersecurity tools such as Security Information and Event Management (SIEM) and Intrusion Detection System (IDS) for real-time threat detection and response. The system utilizes machine learning algorithms to enhance threat analysis, significantly improving efficiency and reducing response time.
+Welcome to the Automated Incident Response System project! This system is designed to quickly identify and mitigate security incidents using advanced technologies and integrations. The project was developed as part of my hands-on experience in cybersecurity and cloud computing, focusing on real-time threat detection and response.
+
+## Project Description
+
+This Automated Incident Response System was developed to streamline the process of identifying and mitigating security incidents. Key features include:
+
+- **Python and Flask**: The system is built using Python and the Flask web framework, providing a robust and scalable foundation.
+- **Integration with Cybersecurity Tools**: Integrated with various cybersecurity tools such as Security Information and Event Management (SIEM) and Intrusion Detection Systems (IDS) for real-time threat detection.
+- **Machine Learning Algorithms**: Implemented machine learning algorithms to analyze threats and enhance the efficiency of the system, reducing the average response time to security incidents by 30%.
 
 ## Features
 
-- **Real-time Threat Detection**: Integration with SIEM and IDS for continuous monitoring.
-- **Automated Response**: Automatically mitigates detected threats.
-- **Machine Learning**: Implements algorithms for advanced threat analysis.
-- **Efficiency**: Reduces average response time to security incidents by 30%.
+- **Real-time Threat Detection**: Monitors and detects security threats in real-time.
+- **Automated Incident Response**: Automatically responds to detected incidents, minimizing potential damage.
+- **Data Analysis**: Uses machine learning to analyze security data and improve threat detection accuracy.
 
 ## Technologies Used
 
-- **Python**: The main programming language used.
-- **Flask**: For building the web framework.
-- **SIEM**: Security Information and Event Management system integration.
-- **IDS**: Intrusion Detection System integration.
-- **Machine Learning**: Algorithms for threat analysis.
+- **Python**: Programming language used for the core logic.
+- **Flask**: Web framework used to build the web application.
+- **SIEM**: Integrated for security information and event management.
+- **IDS**: Used for intrusion detection.
+- **Machine Learning**: Algorithms implemented for threat analysis and response.
 
 ## Installation
 
+To set up and run this project locally, follow these steps:
+
+### Prerequisites
+
+- Python 3.7+
+- Flask
+- pip (Python package installer)
+
+### Steps
+
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/automated-incident-response-system.git
+    git clone https://github.com/adamgul24/automated-incident-response-system.git
     cd automated-incident-response-system
     ```
 
-2. **Create a Virtual Environment**:
-    ```sh
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install Dependencies**:
+2. **Install the Required Packages**:
     ```sh
     pip install -r requirements.txt
     ```
 
-4. **Set Up Environment Variables**:
-    Create a `.env` file and add the following:
+3. **Run the Application**:
     ```sh
-    FLASK_APP=app.py
-    FLASK_ENV=development
-    SIEM_API_KEY=your_siem_api_key
-    IDS_API_KEY=your_ids_api_key
+    python main.py
     ```
 
-5. **Run the Application**:
-    ```sh
-    flask run
-    ```
+4. **Access the Application**:
+    Open your web browser and go to `http://127.0.0.1:5000`.
 
 ## Usage
 
-1. **Access the Dashboard**: Navigate to `http://127.0.0.1:5000` to access the system dashboard.
-2. **Real-time Monitoring**: The system will start monitoring threats in real-time.
-3. **Automated Response**: Detected threats will be mitigated automatically.
-4. **View Reports**: Access detailed reports and logs of threats and responses.
+1. **Monitor Security Threats**: The system continuously monitors for security threats using integrated SIEM and IDS tools.
+2. **Automated Response**: On detecting a threat, the system automatically responds to mitigate the incident.
+3. **Threat Analysis**: Analyzes threats using machine learning to improve future responses.
+
+## Project Structure
+
+- `main.py`: The main application file.
+- `templates/`: Directory for HTML templates.
+- `static/`: Directory for static files (CSS, JS).
+- `requirements.txt`: File listing the required Python packages.
 
 ## Contributing
 
-1. **Fork the Repository**
-2. **Create a Feature Branch**
-    ```sh
-    git checkout -b feature/your-feature-name
-    ```
-3. **Commit Changes**
-    ```sh
-    git commit -m 'Add your feature'
-    ```
-4. **Push to the Branch**
-    ```sh
-    git push origin feature/your-feature-name
-    ```
-5. **Open a Pull Request**
+Feel free to fork this repository and contribute by submitting a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Contact
 
